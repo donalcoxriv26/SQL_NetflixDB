@@ -47,7 +47,7 @@ LIMIT 10;
 
 **6.- What is the total length of all the episodes for the series "Stranger Things"?**
 
-**7.- What is the most popular gender in Netflix series?/What are the most popular series?
+**7.- What is the most popular gender in Netflix series?/What are the most popular series?**
 
 **FIRST QUESTION -> We got the actor who has participated in the most series: Gina Carano**
 
