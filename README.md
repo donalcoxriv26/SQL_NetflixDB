@@ -82,7 +82,7 @@ SELECT titulo FROM series WHERE serie_id=8;
 ```
 <img width="80" height="40" alt="image" src="https://github.com/user-attachments/assets/f2da2424-5cbf-4f5a-859d-cd7bc537f700" />
 
-**THIRD QUESTION -> We got the longest running episode**
+**THIRD QUESTION -> We got the longest running episodes**
 
 ```sql
 SELECT episodio_id,serie_id, MAX(duracion) AS mayor_duracion
