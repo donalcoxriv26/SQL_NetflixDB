@@ -49,7 +49,7 @@ LIMIT 10;
 
 **7.- What is the most popular gender in Netflix series?/What are the most popular series?**
 
-**FIRST QUESTION -> We got the actor who has participated in the most series: Gina Carano**
+**FIRST QUESTION -> We got the actor who has participated in the most series**
 
 ```sql
 SELECT actor_id, COUNT(serie_id)
@@ -67,7 +67,7 @@ WHERE actor_id = 18;
 ```
 <img width="103" height="39" alt="image" src="https://github.com/user-attachments/assets/14e5cb9d-fa38-43c3-943a-3bd955d714b2" />
 
-**SECOND QUESTION -> We got the series with the highest rating: Arcane**
+**SECOND QUESTION -> We got the series with the highest rating**
 
 ```sql
 SELECT serie_id, AVG(rating_imdb)
@@ -82,7 +82,7 @@ SELECT titulo FROM series WHERE serie_id=8;
 ```
 <img width="80" height="40" alt="image" src="https://github.com/user-attachments/assets/f2da2424-5cbf-4f5a-859d-cd7bc537f700" />
 
-**THIRD QUESTION -> We got the longest running episode: The Sing of Three**
+**THIRD QUESTION -> We got the longest running episode**
 
 ```sql
 SELECT episodio_id,serie_id, MAX(duracion) AS mayor_duracion
