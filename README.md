@@ -1,1 +1,1 @@
-#This project is about some queries from netflix data base 
+# This project is about some queries from netflix data base 
