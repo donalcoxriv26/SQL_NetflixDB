@@ -49,6 +49,8 @@ LIMIT 10;
 
 **7.- What is the most popular gender in Netflix series?/What are the most popular series?**
 
+**8.- What is the most successful serie?**
+
 **FIRST QUESTION -> We got the actor who has participated in the most series**
 
 ```sql
@@ -157,6 +159,25 @@ GROUP BY series.serie_id
 ORDER BY rating_promedio DESC;
 ```
 <img width="418" height="153" alt="image" src="https://github.com/user-attachments/assets/01eb24a2-6c91-4655-b077-8422c7f1d448" />
+
+**EIGHTH QUESTION -> Identify the most successful series from the NetflixDB database, the most successful series are defined by the number of episodes and average rating**
+
+```sql
+WITH SeriesExitosas AS (
+SELECT 
+series.titulo,
+COUNT(episodios.episodio_id) AS cantidad_de_episodios,
+AVG(rating_imdb) AS promedio_general
+FROM series 
+JOIN episodios 
+ON series.serie_id = episodios.serie_id
+GROUP BY 1
+ORDER BY promedio_general DESC
+)
+
+SELECT * FROM SeriesExitosas
+```
+<img width="353" height="244" alt="image" src="https://github.com/user-attachments/assets/d3d9c804-4d28-44d5-beea-975174e4d301" />
 
 This is the end of my analysis about 'netflixdb' database.
 
